@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --text-light: #fff;
   --primary: #582a72;
   --primary-light: #764b8e;
 	--primary-lighter: #9775aa;
@@ -23,6 +22,7 @@
 	--quaternary-lighter: #d4ee9f;
 	--quaternary-dark: #567714;
 	--quaternary-darker: #354f00;
+	--white: #fff;
 }
 
 body {
@@ -33,23 +33,28 @@ body {
 
 .brand {
   font-family: 'Rock 3d', cursive;
-  color: #ffffaa;
-  text-shadow: 3px 3px 3px#3d1255;
-  text-shadow: 4px 4px 5px#260339;
+	display: inline;
+  color: var(--tertiary-lighter);
+	margin: 15px;
+  text-shadow: 3px 3px 3px var(--primary-dark);
+  text-shadow: 4px 4px 5px var(--primary-darker);
 }
 
 .container {
   max-width: 768px;
   margin: 100px auto;
-  padding: 0 20px;
+  padding: 5px 20px;
+	background-color: var(--white);
+	border-radius: 5px;
 }
 
 .light {
-  color: var(--text-light);
+  color: var(--white);
 }
 
 .light:hover {
   color: var(--tertiary-light);
+	text-shadow: 2px 2px 4px var(--secondary-light);
 }
 
 .link {
@@ -58,4 +63,8 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }

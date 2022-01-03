@@ -1,3 +1,7 @@
-<div>
-  <h2 class="text-center">Home</h2>
+<script>
+  import {str_welcome_msg} from '../../../config/lang/template.json'
+</script>
+
+<div class="container">
+  <p class="text-center">{str_welcome_msg}</p>
 </div>
